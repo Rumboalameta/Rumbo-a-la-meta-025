@@ -10,7 +10,7 @@ body {
 
 /* Header */
 header {
-    background: linear-gradient(135deg, #1e3c72, #2a5298); /* Azul elegante */
+    background: linear-gradient(45deg, #ff6f61, #f7b731, #9b59b6, #3498db, #1abc9c, #e74c3c); /* Colores arcoiris */
     color: #fff;
     padding: 1rem;
     text-align: center;
@@ -29,7 +29,7 @@ header nav a {
 }
 
 header nav a:hover {
-    color: #f1c40f; /* Dorado en hover */
+    color: #f39c12; /* Dorado en hover */
 }
 
 /* Main content */
@@ -37,21 +37,20 @@ main {
     padding: 20px;
 }
 
-/* Secciones con fondo blanco y detalles dorados */
+/* Secciones con colores arcoiris de fondo */
 section {
-    background-color: #fff; /* Fondo blanco */
-    color: #000; /* Texto negro para las secciones */
+    background: linear-gradient(135deg, rgba(255, 99, 71, 0.6), rgba(255, 223, 186, 0.6), rgba(0, 255, 255, 0.6)); /* Colores arcoiris */
     border-radius: 10px;
     margin-bottom: 40px;
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
 }
 
-section h2 {
-    border-bottom: 2px solid #f1c40f; /* Detalles dorados en los títulos */
+/* Títulos de las secciones */
+h2 {
+    border-bottom: 2px solid #fff; /* Detalles en blanco */
     padding-bottom: 10px;
     font-size: 2rem;
-    color: #1e3c72; /* Azul oscuro */
+    color: #fff; /* Blanco para los títulos */
 }
 
 /* Formulario */
@@ -67,14 +66,14 @@ form textarea {
     border-radius: 5px;
     padding: 10px;
     font-size: 1rem;
-    background-color: #f7f7f7; /* Fondo suave para el textarea */
-    color: #333; /* Texto negro en el textarea */
-    border: 1px solid #ccc; /* Borde suave */
+    background-color: #333; /* Fondo oscuro para el textarea */
+    color: #fff; /* Texto blanco */
+    border: none;
     resize: none;
 }
 
 form button {
-    background: #2a5298; /* Azul elegante */
+    background: #3498db; /* Azul brillante */
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -84,14 +83,14 @@ form button {
 }
 
 form button:hover {
-    background: #f1c40f; /* Dorado en hover */
+    background: #9b59b6; /* Morado en hover */
 }
 
 /* Footer */
 footer {
     text-align: center;
     padding: 10px;
-    background: #1e3c72; /* Fondo azul oscuro */
+    background: #333; /* Fondo oscuro */
     color: #fff;
 }
 
