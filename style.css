@@ -1,8 +1,8 @@
 /* General */
 body {
-    font-family: 'Happy Memories', cursive;
-    background-color: #000;
-    color: #fff;
+    font-family: 'Muthiara', cursive;
+    background-color: #000; /* Fondo negro */
+    color: #fff; /* Texto blanco */
     margin: 0;
     padding: 0;
     line-height: 1.6;
@@ -10,10 +10,14 @@ body {
 
 /* Header */
 header {
-    background: linear-gradient(45deg, #ff6f61, #f7b731, #9b59b6, #3498db, #1abc9c, #e74c3c);
+    background: linear-gradient(135deg, #1e3c72, #2a5298); /* Azul elegante */
     color: #fff;
     padding: 1rem;
     text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
 }
 
 header nav a {
@@ -25,7 +29,7 @@ header nav a {
 }
 
 header nav a:hover {
-    color: #f39c12; /* Cambio de color en hover para los enlaces */
+    color: #f1c40f; /* Dorado en hover */
 }
 
 /* Main content */
@@ -33,20 +37,21 @@ main {
     padding: 20px;
 }
 
-/* Secciones con colores arcoiris de fondo */
+/* Secciones con fondo blanco y detalles dorados */
 section {
-    background: linear-gradient(135deg, rgba(255, 99, 71, 0.6), rgba(255, 223, 186, 0.6), rgba(0, 255, 255, 0.6));
+    background-color: #fff; /* Fondo blanco */
+    color: #000; /* Texto negro para las secciones */
     border-radius: 10px;
     margin-bottom: 40px;
     padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
 }
 
-/* Títulos de las secciones */
-h2 {
-    border-bottom: 2px solid #fff;
+section h2 {
+    border-bottom: 2px solid #f1c40f; /* Detalles dorados en los títulos */
     padding-bottom: 10px;
     font-size: 2rem;
-    color: #fff;
+    color: #1e3c72; /* Azul oscuro */
 }
 
 /* Formulario */
@@ -62,14 +67,14 @@ form textarea {
     border-radius: 5px;
     padding: 10px;
     font-size: 1rem;
-    background-color: #333;
-    color: #fff;
-    border: none;
+    background-color: #f7f7f7; /* Fondo suave para el textarea */
+    color: #333; /* Texto negro en el textarea */
+    border: 1px solid #ccc; /* Borde suave */
     resize: none;
 }
 
 form button {
-    background: #3498db;
+    background: #2a5298; /* Azul elegante */
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -79,22 +84,17 @@ form button {
 }
 
 form button:hover {
-    background: #9b59b6;
+    background: #f1c40f; /* Dorado en hover */
 }
 
 /* Footer */
 footer {
     text-align: center;
     padding: 10px;
-    background: #333;
+    background: #1e3c72; /* Fondo azul oscuro */
     color: #fff;
 }
 
 footer p {
     margin: 0;
-}
-
-    padding: 10px;
-    background: #333;
-    color: #fff;
 }
