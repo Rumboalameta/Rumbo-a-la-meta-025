@@ -1,6 +1,8 @@
 /* General */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Happy Memories', cursive;
+    background-color: #000;
+    color: #fff;
     margin: 0;
     padding: 0;
     line-height: 1.6;
@@ -8,7 +10,7 @@ body {
 
 /* Header */
 header {
-    background: #333;
+    background: linear-gradient(45deg, #ff6f61, #f7b731, #9b59b6, #3498db, #1abc9c, #e74c3c);
     color: #fff;
     padding: 1rem;
     text-align: center;
@@ -18,6 +20,12 @@ header nav a {
     color: #fff;
     margin: 0 15px;
     text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #f39c12; /* Cambio de color en hover para los enlaces */
 }
 
 /* Main content */
@@ -25,41 +33,67 @@ main {
     padding: 20px;
 }
 
+/* Secciones con colores arcoiris de fondo */
 section {
+    background: linear-gradient(135deg, rgba(255, 99, 71, 0.6), rgba(255, 223, 186, 0.6), rgba(0, 255, 255, 0.6));
+    border-radius: 10px;
     margin-bottom: 40px;
+    padding: 20px;
 }
 
+/* Títulos de las secciones */
 h2 {
-    border-bottom: 2px solid #333;
+    border-bottom: 2px solid #fff;
     padding-bottom: 10px;
+    font-size: 2rem;
+    color: #fff;
 }
 
 /* Formulario */
 form {
     margin-top: 20px;
+    text-align: center;
 }
 
 form textarea {
     width: 100%;
     height: 80px;
     margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    resize: none;
 }
 
 form button {
-    background: #333;
+    background: #3498db;
     color: #fff;
     padding: 10px 20px;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
+    transition: background 0.3s ease;
 }
 
 form button:hover {
-    background: #555;
+    background: #9b59b6;
 }
 
 /* Footer */
 footer {
     text-align: center;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+}
+
+footer p {
+    margin: 0;
+}
+
     padding: 10px;
     background: #333;
     color: #fff;
