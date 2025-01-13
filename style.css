@@ -1,99 +1,36 @@
-/* General */
-body {
-    font-family: 'Cherry Cream Soda', cursive; /* Cambiar la fuente aquí */
-    background-color: #000; /* Fondo negro */
-    color: #fff; /* Texto blanco */
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-}
-
-/* Header */
-header {
-    background: linear-gradient(45deg, #ff6f61, #f7b731, #9b59b6, #3498db, #1abc9c, #e74c3c); /* Colores arcoiris */
-    color: #fff;
-    padding: 1rem;
-    text-align: center;
-}
-
-header h1 {
-    font-size: 2.5rem;
-}
-
-header nav a {
-    color: #fff;
-    margin: 0 15px;
-    text-decoration: none;
-    font-size: 1.2rem;
-    transition: color 0.3s ease;
-}
-
-header nav a:hover {
-    color: #f39c12; /* Dorado en hover */
-}
-
-/* Main content */
-main {
-    padding: 20px;
-}
-
-/* Secciones con colores arcoiris de fondo */
-section {
-    background: linear-gradient(135deg, rgba(255, 99, 71, 0.6), rgba(255, 223, 186, 0.6), rgba(0, 255, 255, 0.6)); /* Colores arcoiris */
-    border-radius: 10px;
-    margin-bottom: 40px;
-    padding: 20px;
-}
-
-/* Títulos de las secciones */
-h2 {
-    border-bottom: 2px solid #fff; /* Detalles en blanco */
-    padding-bottom: 10px;
-    font-size: 2rem;
-    color: #fff; /* Blanco para los títulos */
-}
-
-/* Formulario */
-form {
-    margin-top: 20px;
-    text-align: center;
-}
-
-form textarea {
-    width: 100%;
-    height: 80px;
+/* Respuestas */
+.respuestas {
+    margin-top: 10px;
     margin-bottom: 10px;
+    padding-left: 20px;
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo translúcido */
+    border-left: 3px solid #3498db;
+}
+
+.respuesta {
+    padding: 5px 0;
+}
+
+textarea.respuesta-input {
+    width: 100%;
+    margin-top: 10px;
     border-radius: 5px;
     padding: 10px;
-    font-size: 1rem;
-    background-color: #333; /* Fondo oscuro para el textarea */
-    color: #fff; /* Texto blanco */
-    border: none;
-    resize: none;
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #444;
 }
 
-form button {
-    background: #3498db; /* Azul brillante */
+button.enviar-respuesta {
+    background-color: #e74c3c; /* Rojo brillante */
     color: #fff;
-    padding: 10px 20px;
+    padding: 8px 16px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background 0.3s ease;
+    transition: background 0.3s;
 }
 
-form button:hover {
-    background: #9b59b6; /* Morado en hover */
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 10px;
-    background: #333; /* Fondo oscuro */
-    color: #fff;
-}
-
-footer p {
-    margin: 0;
+button.enviar-respuesta:hover {
+    background-color: #c0392b;
 }
