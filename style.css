@@ -1,28 +1,13 @@
-/* Respuestas */
-.respuestas {
+/* Estilo para los botones de Like y Dislike */
+.likes-dislikes {
     margin-top: 10px;
-    margin-bottom: 10px;
-    padding-left: 20px;
-    background-color: rgba(255, 255, 255, 0.1); /* Fondo translúcido */
-    border-left: 3px solid #3498db;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
 }
 
-.respuesta {
-    padding: 5px 0;
-}
-
-textarea.respuesta-input {
-    width: 100%;
-    margin-top: 10px;
-    border-radius: 5px;
-    padding: 10px;
-    background-color: #333;
-    color: #fff;
-    border: 1px solid #444;
-}
-
-button.enviar-respuesta {
-    background-color: #e74c3c; /* Rojo brillante */
+.likes-dislikes button {
+    background-color: #3498db; /* Azul para Like */
     color: #fff;
     padding: 8px 16px;
     border: none;
@@ -31,6 +16,14 @@ button.enviar-respuesta {
     transition: background 0.3s;
 }
 
-button.enviar-respuesta:hover {
-    background-color: #c0392b;
+.likes-dislikes button:hover {
+    background-color: #2980b9; /* Azul oscuro para hover */
+}
+
+.likes-dislikes .dislike {
+    background-color: #e74c3c; /* Rojo para Dislike */
+}
+
+.likes-dislikes .dislike:hover {
+    background-color: #c0392b; /* Rojo oscuro para hover */
 }
