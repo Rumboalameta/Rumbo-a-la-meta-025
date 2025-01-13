@@ -7,9 +7,10 @@ body {
     padding: 0;
     line-height: 1.6;
     display: flex;
-    justify-content: center; /* Centrar el contenido horizontalmente */
-    align-items: center; /* Centrar el contenido verticalmente */
-    height: 100vh; /* Asegurarnos de que ocupe toda la altura de la ventana */
+    flex-direction: column; /* Aseguramos que los elementos se apilen verticalmente */
+    justify-content: flex-start; /* El contenido se alinea arriba */
+    align-items: center; /* Centrado de los elementos */
+    height: 100vh; /* Altura completa de la ventana */
     text-align: center; /* Alineación del texto */
 }
 
@@ -21,6 +22,10 @@ header {
     width: 100%; /* Aseguramos que el header ocupe todo el ancho */
     box-sizing: border-box; /* Incluye el padding dentro del width */
     border-bottom: 5px solid #fff; /* Detalle blanco en la parte inferior */
+    position: fixed; /* Fijamos el header en la parte superior */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Aseguramos que el header esté encima del contenido */
 }
 
 header h1 {
@@ -49,7 +54,7 @@ main {
     padding: 20px;
     width: 100%; /* Aseguramos que el contenido ocupe todo el ancho disponible */
     max-width: 800px; /* Máximo ancho para evitar que se vea demasiado grande en pantallas grandes */
-    margin: 20px; /* Espacio adicional */
+    margin-top: 80px; /* Margen superior para no tapar el header fijo */
 }
 
 /* Secciones con colores arcoiris de fondo */
@@ -110,6 +115,7 @@ footer {
     width: 100%; /* Aseguramos que ocupe todo el ancho */
     box-sizing: border-box; /* Incluye el padding dentro del width */
     border-top: 5px solid #fff; /* Detalle blanco en la parte superior */
+    margin-top: 20px; /* Espacio antes del pie de página */
 }
 
 footer p {
