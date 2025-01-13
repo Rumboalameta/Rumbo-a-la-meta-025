@@ -15,7 +15,9 @@ document.addEventListener("DOMContentLoaded", () => {
             const publicacion = {
                 texto: texto,
                 id: Date.now(),  // Usamos el timestamp como identificador único
-                respuestas: []    // Inicia con un arreglo vacío de respuestas
+                respuestas: [],    // Inicia con un arreglo vacío de respuestas
+                likes: 0,          // Inicializamos con 0 likes
+                dislikes: 0        // Inicializamos con 0 dislikes
             };
 
             // Guardar la publicación en localStorage
@@ -44,4 +46,5 @@ document.addEventListener("DOMContentLoaded", () => {
             publicacionElemento.classList.add("publicacion");
             publicacionElemento.innerHTML = `
                 <p class="mensaje">${publicacion.texto}</p>
-   
+                <button class="editar">Editar</button>
+ 
